@@ -128,6 +128,7 @@ body {
   padding: 9px;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
+  border: none;
 }
 
 .inputs .options .option:hover,
