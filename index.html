@@ -8,6 +8,71 @@
     <title>Tip calculator app</title>
   </head>
   <body>
+    <main>
+      <section class="app">
+        <div class="inputs">
+          <div class="bill">
+            <div>
+              <label for="bill">Bill</label>
+              <span class="error">error</span>
+            </div>
+            <img src="./images/icon-dollar.svg" alt="dollar" />
+            <input
+              type="text"
+              placeholder="00.00"
+              id="bill"
+              class="bill-input"
+            />
+          </div>
+          <div class="tip-select-area">
+            <div>
+              <label>Select Tip %</label>
+              <span class="error">select tip</span>
+            </div>
+            <div class="options">
+              <div class="option">5%</div>
+              <div class="option">10%</div>
+              <div class="option">15%</div>
+              <div class="option">25%</div>
+              <div class="option">50%</div>
+              <input type="text" placeholder="00.00" class="tip-input" />
+            </div>
+          </div>
+
+          <div class="numbers-people">
+            <div>
+              <label for="num-people">Number of People</label>
+              <span class="error">error</span>
+            </div>
+            <input type="text" placeholder="0" class="num-people-input" />
+          </div>
+        </div>
+
+        <!-- result display -->
+        <div class="results">
+          <div class="top-area">
+            <div class="row">
+              <div class="text">
+                <span>Tip Amount</span>
+                <span class="small">/ person</span>
+              </div>
+              <div class="value">$0.00</div>
+            </div>
+            <div class="row">
+              <div class="text">
+                <span>Total</span>
+                <span class="small">/ person</span>
+              </div>
+              <div class="value">$0.00</div>
+            </div>
+          </div>
+
+          <div class="bottom-area">
+            <button class="btn-reset">RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
