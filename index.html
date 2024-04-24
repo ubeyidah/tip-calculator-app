@@ -15,45 +15,55 @@
             <div class="bill">
               <div>
                 <label for="bill">Bill</label>
-                <span class="error"></span>
+                <span class="error js-bill-error"></span>
               </div>
 
               <div class="input">
                 <div class="currency">Birr</div>
                 <input
-                  type="text"
+                  type="number"
                   placeholder="00.00"
                   id="bill"
-                  class="bill-input"
+                  class="bill-input js-bill-input"
                 />
               </div>
             </div>
 
             <div class="tip-select-area">
               <div class="top">
-                <label>Select Tip %</label>
-                <span class="error"></span>
+                <label for="select">Select Tip %</label>
+                <span class="error js-select-error"></span>
               </div>
 
               <div class="options">
-                <button class="option" value="5">5%</button>
-                <button class="option" value="10">10%</button>
-                <button class="option" value="15">15%</button>
-                <button class="option" value="25">25%</button>
-                <button class="option" value="50">50%</button>
-                <input type="text" placeholder="Custom" class="tip-input" />
+                <button class="option js-option" value="5">5%</button>
+                <button class="option js-option" value="10">10%</button>
+                <button class="option js-option" value="15">15%</button>
+                <button class="option js-option" value="25">25%</button>
+                <button class="option js-option" value="50">50%</button>
+                <input
+                  type="text"
+                  placeholder="Custom"
+                  class="tip-input js-custom-tip-input"
+                  id="select"
+                />
               </div>
             </div>
 
             <div class="numbers-people">
               <div class="top">
                 <label for="num-people">Number of People</label>
-                <span class="error"></span>
+                <span class="error js-num-error"></span>
               </div>
 
               <div class="input">
                 <img src="./images/icon-person.svg" alt="" />
-                <input type="text" placeholder="0" class="num-people-input" />
+                <input
+                  type="number"
+                  placeholder="0"
+                  class="num-people-input js-peoples-input"
+                  id="num-people"
+                />
               </div>
             </div>
           </div>
@@ -66,19 +76,19 @@
                   <span>Tip Amount</span>
                   <span class="small">/ person</span>
                 </div>
-                <div class="value">0.00 <span>Birr</span></div>
+                <div class="value js-tip-amount">0.00 <span>Birr</span></div>
               </div>
               <div class="row">
                 <div class="text">
                   <span>Total</span>
                   <span class="small">/ person</span>
                 </div>
-                <div class="value">0.00 <span>Birr</span></div>
+                <div class="value js-total">0.00 <span>Birr</span></div>
               </div>
             </div>
 
             <div class="bottom-area">
-              <button class="btn-reset">RESET</button>
+              <button class="btn-reset js-reset-btn" disabled>RESET</button>
             </div>
           </div>
         </div>
