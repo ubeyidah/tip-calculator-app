@@ -27,10 +27,6 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-### Links
-
-- Live Site URL: [tip-app-web.netlify.app](https://tip-web-app.netlify.app)
-
 ## My process
 
 ### Built with
